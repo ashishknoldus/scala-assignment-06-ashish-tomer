@@ -1,19 +1,18 @@
 package edu.knoldus.filer
 
-import java.io.{File, FileNotFoundException}
-
 import org.scalatest.{BeforeAndAfterAll, FunSuite}
 
-import scala.concurrent.{Await, Future}
-import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.Await
 import scala.concurrent.duration._
 
 /**
   * Created by ashish on 2/3/17.
   */
-class FileListerTest extends FunSuite with BeforeAndAfterAll{
+class FileListerTest extends FunSuite with BeforeAndAfterAll {
 
-
+  /**
+    * Tests whether the returned values is correct
+    */
   test("Testing correct output") {
 
     val fileLister = new FileLister
@@ -33,6 +32,9 @@ class FileListerTest extends FunSuite with BeforeAndAfterAll{
 
   }
 
+  /**
+    * Testing the NullPointerException when wrong directory name is given
+    */
   test("Test NullPointerException while accessing file") {
     val fileLister = new FileLister
     //Wrong directory name
@@ -41,6 +43,9 @@ class FileListerTest extends FunSuite with BeforeAndAfterAll{
     }
   }
 
+  /**
+    *Testing the number of files(not folders) avaiilable in the given directory
+    */
   test("Test Count of Files") {
     val numberOfFiles = 7
     val fileLister = new FileLister
@@ -48,6 +53,5 @@ class FileListerTest extends FunSuite with BeforeAndAfterAll{
 
     assert(actualList.length == numberOfFiles)
   }
-
 
 }
