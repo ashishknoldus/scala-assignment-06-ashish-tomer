@@ -14,6 +14,7 @@ class FileLister {
   @throws[FileNotFoundException]
   @throws[IOException]
   @throws[IndexOutOfBoundsException]
+  @throws[NullPointerException]
   def listFiles(directory : String): Future[List[String]] = {
 
     val classLoader:ClassLoader = getClass.getClassLoader
@@ -26,7 +27,7 @@ class FileLister {
     getListInString(finalList)
   }
 
-  def getListInString(listOfFiles: Future[List[List[File]]]): Future[List[String]] = {
+  private def getListInString(listOfFiles: Future[List[List[File]]]): Future[List[String]] = {
     listOfFiles.map(list => {
       list.map(innerList => {
         stringify(innerList)
@@ -34,7 +35,7 @@ class FileLister {
     })
   }
 
-  def stringify(list:List[File], pointer:Int = 0, result:String = ""): String = {
+  private def stringify(list:List[File], pointer:Int = 0, result:String = ""): String = {
     if(pointer < list.length) {
       result + list(pointer).getName + "/" + stringify(list, pointer + 1)
     }

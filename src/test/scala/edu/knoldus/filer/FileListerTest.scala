@@ -1,6 +1,6 @@
 package edu.knoldus.filer
 
-import java.io.File
+import java.io.{File, FileNotFoundException}
 
 import org.scalatest.{BeforeAndAfterAll, FunSuite}
 
@@ -33,10 +33,21 @@ class FileListerTest extends FunSuite with BeforeAndAfterAll{
 
   }
 
-  test("FileNotFoundException") {
-
+  test("NullPointerException") {
     val fileLister = new FileLister
-    val actualList = Await.result(fileLister.listFiles("Folder0"), 2 seconds)
-
+    //Wrong directory name
+    intercept[NullPointerException] {
+      val actualList = Await.result(fileLister.listFiles("Folder0"), 2 seconds)
+    }
   }
+
+  test("CountFiles") {
+    val numberOfFiles = 7
+    val fileLister = new FileLister
+    val actualList = Await.result(fileLister.listFiles("Folder2"), 2 seconds)
+
+    assert(actualList.length == numberOfFiles)
+  }
+
+
 }
