@@ -11,9 +11,6 @@ import scala.concurrent.ExecutionContext.Implicits.global
 
 class FileLister {
 
-  @throws[FileNotFoundException]
-  @throws[IOException]
-  @throws[IndexOutOfBoundsException]
   @throws[NullPointerException]
   def listFiles(directory : String): Future[List[String]] = {
 
@@ -59,6 +56,7 @@ class FileLister {
 
   }
 
+  /*For a given file this method returns a list of parents to the limit of root*/
   private def reachFromFileToRoot(files : List[File], root : File) : List[File] = {
 
     if(files.head.getParentFile != root) {

@@ -33,15 +33,15 @@ class FileListerTest extends FunSuite with BeforeAndAfterAll{
 
   }
 
-  test("NullPointerException") {
+  test("Test NullPointerException while accessing file") {
     val fileLister = new FileLister
     //Wrong directory name
     intercept[NullPointerException] {
-      val actualList = Await.result(fileLister.listFiles("Folder0"), 2 seconds)
+      Await.result(fileLister.listFiles("Folder0"), 2 seconds)
     }
   }
 
-  test("CountFiles") {
+  test("Test Count of Files") {
     val numberOfFiles = 7
     val fileLister = new FileLister
     val actualList = Await.result(fileLister.listFiles("Folder2"), 2 seconds)
