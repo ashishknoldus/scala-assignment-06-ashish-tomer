@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3cbf8c5-46fc-4572-95ce-00a22157a487" name="Default" comment="" />
+    <list default="true" id="c3cbf8c5-46fc-4572-95ce-00a22157a487" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/Folder1/file1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/Folder2/Folder3/file4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/Folder2/Folder3/file5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/Folder2/Folder4/file6" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/Folder2/file2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/Folder2/file3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/Folder2/Folder4/Folder5/file7" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/Folder2/Folder4/Folder5/file8" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/edu/knoldus/filer/FileLister.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/edu/knoldus/filer/FileLister.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/test-classes/edu/knoldus/filer/FileListerTest.class" afterPath="$PROJECT_DIR$/target/scala-2.12/test-classes/edu/knoldus/filer/FileListerTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/edu/knoldus/filer/FileLister.scala" afterPath="$PROJECT_DIR$/src/main/scala/edu/knoldus/filer/FileLister.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/edu/knoldus/filer/FileListerTest.scala" afterPath="$PROJECT_DIR$/src/test/scala/edu/knoldus/filer/FileListerTest.scala" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -45,13 +60,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FileLister.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FileLister.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/edu/knoldus/filer/FileLister.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-42">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="190">
+              <caret line="41" column="12" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
               <folding>
-                <element signature="e#27#46#0" expanded="true" />
+                <element signature="e#27#84#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,8 +75,20 @@
       <file leaf-file-name="FileListerTest.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/edu/knoldus/filer/FileListerTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+            <state relative-caret-position="264">
+              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding>
+                <element signature="e#27#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -73,6 +100,9 @@
     <findStrings>
       <find>print</find>
       <find>currentRoot</find>
+      <find>file3</find>
+      <find>file8</find>
+      <find>Folder</find>
     </findStrings>
     <replaceStrings>
       <replace>root</replace>
@@ -91,8 +121,9 @@
       <list>
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/project/plugins.sbt" />
-        <option value="$PROJECT_DIR$/src/test/scala/edu/knoldus/filer/FileListerTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/edu/knoldus/filer/FileLister.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/edu/knoldus/filer/FileListerTest.scala" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -117,8 +148,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -166,6 +197,58 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala-assignment-06-ashish-tomer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala-assignment-06-ashish-tomer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala-assignment-06-ashish-tomer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala-assignment-06-ashish-tomer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Folder1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -328,14 +411,10 @@
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Folder1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -345,11 +424,14 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/Folder 1/Folder 2" />
     </key>
   </component>
-  <component name="RunManager" selected="ScalaTest.FileListerTest.Testing directory access">
+  <component name="RunManager" selected="ScalaTest.FileListerTest.Testing incorrect directory access">
     <configuration default="false" name="FileListerTest.Testing directory access" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="scala-assignment-06-ashish-tomer" />
@@ -360,6 +442,23 @@
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
       <setting name="searchForTest" value="Across module dependencies" />
       <setting name="testName" value="Testing directory access" />
+      <setting name="testKind" value="Test name" />
+      <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="FileListerTest.Testing incorrect directory access" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="scala-assignment-06-ashish-tomer" />
+      <setting name="path" value="edu.knoldus.filer.FileListerTest" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="Testing incorrect directory access" />
       <setting name="testKind" value="Test name" />
       <setting name="showProgressMessages" value="true" />
       <classRegexps />
@@ -638,12 +737,14 @@
       <envs />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="ScalaTest.FileListerTest.Testing directory access" />
+      <item index="1" class="java.lang.String" itemvalue="ScalaTest.FileListerTest.Testing incorrect directory access" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="ScalaTest.FileListerTest.Testing directory access" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="ScalaTest.FileListerTest.Testing incorrect directory access" />
+        <item index="1" class="java.lang.String" itemvalue="ScalaTest.FileListerTest.Testing directory access" />
       </list>
     </recent_temporary>
   </component>
@@ -699,40 +800,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FileListerTest_Testing_directory_access - 2017.02.03 at 03h 24m 02s.xml">
+    <history-entry file="FileListerTest_Testing_directory_access - 2017.02.03 at 15h 41m 21s.xml">
       <configuration name="FileListerTest.Testing directory access" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="FileListerTest_Testing_directory_access - 2017.02.03 at 03h 25m 43s.xml">
+    <history-entry file="FileListerTest_Testing_directory_access - 2017.02.03 at 15h 42m 21s.xml">
       <configuration name="FileListerTest.Testing directory access" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="FileListerTest_Testing_directory_access - 2017.02.03 at 03h 26m 03s.xml">
+    <history-entry file="FileListerTest_Testing_directory_access - 2017.02.03 at 15h 45m 06s.xml">
       <configuration name="FileListerTest.Testing directory access" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="FileListerTest_Testing_directory_access - 2017.02.03 at 03h 35m 57s.xml">
+    <history-entry file="FileListerTest_Testing_directory_access - 2017.02.03 at 15h 46m 00s.xml">
       <configuration name="FileListerTest.Testing directory access" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="FileListerTest_Testing_directory_access - 2017.02.03 at 03h 46m 48s.xml">
+    <history-entry file="FileListerTest_Testing_directory_access - 2017.02.03 at 15h 47m 42s.xml">
       <configuration name="FileListerTest.Testing directory access" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="FileListerTest_Testing_directory_access - 2017.02.03 at 04h 05m 19s.xml">
+    <history-entry file="FileListerTest_Testing_directory_access - 2017.02.03 at 15h 48m 03s.xml">
       <configuration name="FileListerTest.Testing directory access" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="FileListerTest_Testing_directory_access - 2017.02.03 at 04h 13m 02s.xml">
-      <configuration name="FileListerTest.Testing directory access" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="FileListerTest_Testing_incorrect_directory_access - 2017.02.03 at 16h 00m 11s.xml">
+      <configuration name="FileListerTest.Testing incorrect directory access" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="FileListerTest_Testing_directory_access - 2017.02.03 at 04h 17m 54s.xml">
-      <configuration name="FileListerTest.Testing directory access" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="FileListerTest_Testing_incorrect_directory_access - 2017.02.03 at 16h 01m 41s.xml">
+      <configuration name="FileListerTest.Testing incorrect directory access" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="FileListerTest_Testing_directory_access - 2017.02.03 at 04h 18m 42s.xml">
-      <configuration name="FileListerTest.Testing directory access" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="FileListerTest_Testing_incorrect_directory_access - 2017.02.03 at 16h 02m 11s.xml">
+      <configuration name="FileListerTest.Testing incorrect directory access" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="FileListerTest_Testing_directory_access - 2017.02.03 at 04h 19m 28s.xml">
-      <configuration name="FileListerTest.Testing directory access" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="FileListerTest_Testing_incorrect_directory_access - 2017.02.03 at 16h 02m 54s.xml">
+      <configuration name="FileListerTest.Testing incorrect directory access" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -755,10 +856,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.03776435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17824773" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -772,6 +873,9 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -781,6 +885,26 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/edu/knoldus/filer/FileLister.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#27#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/knoldus/filer/FileListerTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding>
+            <element signature="e#27#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build.sbt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -800,7 +924,7 @@
         <state relative-caret-position="90">
           <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
           <folding>
-            <element signature="e#27#46#0" expanded="true" />
+            <element signature="e#27#84#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -921,7 +1045,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,25 +1052,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/knoldus/filer/FileListerTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/edu/knoldus/filer/FileLister.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="190">
+          <caret line="41" column="12" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+          <folding>
+            <element signature="e#27#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/edu/knoldus/filer/FileListerTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
             <element signature="e#27#46#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>

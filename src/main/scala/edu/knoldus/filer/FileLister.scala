@@ -1,11 +1,9 @@
 package edu.knoldus.filer
 
-import java.io.File
+import java.io.{File, FileNotFoundException, IOException}
 
 import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global
-import scala.concurrent.Await
-import scala.concurrent.duration._
 
 /**
   * Created by ashish on 2/2/17.
@@ -13,30 +11,45 @@ import scala.concurrent.duration._
 
 class FileLister {
 
-  def listFiles(directory : String): Array[Future[List[File]]] = {
+  @throws[FileNotFoundException]
+  @throws[IOException]
+  @throws[IndexOutOfBoundsException]
+  def listFiles(directory : String): Future[List[String]] = {
 
     val classLoader:ClassLoader = getClass.getClassLoader
     val rootDirectory:File = new File(classLoader.getResource(directory).getFile)
 
-    val listOfFiles:Future[Array[File]] = Future{ filesInDirectory(rootDirectory) }
+    val listOfFiles:Future[List[File]] = Future{ filesInDirectory(rootDirectory) }
 
-    //used .value.get.get to get Array out of Future
-    val allFiles:Array[Future[List[File]]] = Await.result(Future{listOfFiles}, 2.seconds).value.get.get.map(file => {
+    val finalList = listOfFiles.map(_.map(file => reachFromFileToRoot(List[File](file), rootDirectory)))
 
-      Future{ reachFromFileToRoot(List[File](file), rootDirectory) }
-
-    })
-
-    allFiles
+    getListInString(finalList)
   }
 
-  def filesInDirectory(directory : File): Array[File] = {
+  def getListInString(listOfFiles: Future[List[List[File]]]): Future[List[String]] = {
+    listOfFiles.map(list => {
+      list.map(innerList => {
+        stringify(innerList)
+      })
+    })
+  }
+
+  def stringify(list:List[File], pointer:Int = 0, result:String = ""): String = {
+    if(pointer < list.length) {
+      result + list(pointer).getName + "/" + stringify(list, pointer + 1)
+    }
+    else {
+      result
+    }
+  }
+
+  private def filesInDirectory(directory : File): List[File] = {
 
     if(directory.isFile) {
-      Array(directory)
+      List(directory)
     } else {
 
-      val files = directory.listFiles
+      val files:List[File] = directory.listFiles.toList
 
       files.map(file => {
           filesInDirectory(file)
@@ -45,7 +58,7 @@ class FileLister {
 
   }
 
-  def reachFromFileToRoot(files : List[File], root : File) : List[File] = {
+  private def reachFromFileToRoot(files : List[File], root : File) : List[File] = {
 
     if(files.head.getParentFile != root) {
       reachFromFileToRoot(files.head.getParentFile :: files, root)
